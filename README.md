@@ -11,3 +11,9 @@
 # LINK 
  
  view site here ()
+
+# TECHNOLOGIES USED
+ Pip
+ Django
+ Pillow
+ 
