@@ -16,4 +16,5 @@
  Pip
  Django
  Pillow
- 
+ JavaScript
+ Bootstrap
