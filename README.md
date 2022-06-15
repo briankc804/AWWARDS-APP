@@ -10,7 +10,7 @@
 
 # LINK 
  
- view site here ()
+ view site here (https://curtainginger.herokuapp.com/)
 
 # TECHNOLOGIES USED
  Pip
