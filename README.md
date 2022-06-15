@@ -32,3 +32,12 @@ Add changes to reflect the changes made
 Commit your changes (git commit -am 'Improve feature')
 Push to the branch (git push origin improve-feature)
 Create a Pull Request
+
+# User Story  
+  
+. A user can view posted projects and their details.  
+. A user can post a project to be rated/reviewed. 
+. A user can rate/ review other users' projects.  
+. Search for projects.  
+. View projects overall score.
+. A user can view their profile page.  
