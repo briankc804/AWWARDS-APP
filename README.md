@@ -17,7 +17,7 @@
  Django
  Pillow
  JavaScript
- Bootstrap
+ Bootstrap4
 
 # DEVELOPMENT
 
