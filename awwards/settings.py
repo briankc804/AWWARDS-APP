@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myawwards',
     'crispy_forms',
-    'rest_framework'
+    'rest_framework',
     'pyuploadcare.dj',
 ]
 UPLOADCARE = {
