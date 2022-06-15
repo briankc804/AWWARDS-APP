@@ -4,7 +4,7 @@ import django_heroku
 from decouple import config, Csv
 
 DEBUG =True
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'fierce-anchorage-60325.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -68,25 +68,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'awwards.wsgi.application'
 
- #Database
- #https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+# Database
+# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dc96i3qi27si9f',
-        'USER': 'ajvtigugvdarpk',
-    'PASSWORD':'63aafcc122af77f56dd1dc4062c0619f16c248cc7260d2c98a3dc4ae4450e345',
-    'HOST':'ec2-52-71-23-11.compute-1.amazonaws.com',
-    'PORT' : '5432'
-    }
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
 }
+
 # DATABASE_URL=mysql://myuser:mypassword@myhost/mydatabase
 
-# db_from_env = dj_database_url.config(conn_max_age=500)
-# DATABASES['default'].update(db_from_env)
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
