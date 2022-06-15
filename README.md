@@ -33,7 +33,7 @@ Commit your changes (git commit -am 'Improve feature')
 Push to the branch (git push origin improve-feature)
 Create a Pull Request
 
-# User Story  
+# USER STORY  
   
 . A user can view posted projects and their details.  
 . A user can post a project to be rated/reviewed. 
@@ -41,3 +41,6 @@ Create a Pull Request
 . Search for projects.  
 . View projects overall score.
 . A user can view their profile page.  
+
+# KNOWN BUGS
+ There are no known bugs in this application.
